@@ -9,10 +9,10 @@
    ```
 3. Also, install http-server, web3.js, jssha, command-line-args with:
    ```
-   npm install --global http-server
-   npm install web3
-   npm install jssha
-   npm install command-line-args
+   npm install -g http-server
+   npm install -g web3
+   npm install -g jssha
+   npm install -g command-line-args
    ```
 4. Move to the root directory on CMD and deploy the contract with:
    ```
