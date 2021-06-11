@@ -21,7 +21,7 @@
    *Note the Notary address generated*
 5. Edit the Notary address in notaryWebLib.js in the website directory and notaryLib.js in clientApp directory with the address generated in the last step.
 6. Install [ganache](https://www.trufflesuite.com/ganache)
-7. While adding the project in a new workspace, select truffle-config.js from the main directory. By default ganache listens to 7545 port, so, this port is used for deployment.
+7. While adding the project in Ganache's new workspace, select truffle-config.js from the main directory. By default ganache listens to 7545 port, so, this port is used for deployment.
 8. Open CMD in the website directory and run:
    ```
    http-server
