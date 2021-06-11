@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Transcript Manager</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.8;
+}
+/* Full height image header */
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/background.jpg");
+  min-height: 94%;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar" style="color: white; background-color: #343a40;">
+    <span class="w3-bar-item w3-wide" style="padding: 16px">XXXX College, XXXX</span>
+    <div class="w3-right w3-hide-small">
+      <a href="http://192.168.56.1:3000" class="w3-bar-item w3-button">Log out</a>
+      <a href="http://127.0.0.1:8080/index1.html" class="w3-bar-item w3-button">Verify only</a>
+      <a href="https://github.com/GursimarSaini/document-mangement" class="w3-bar-item w3-button">HOME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+<div class="w3-display-right w3-text-white" style="padding:500px;">
+    <span class="w3-jumbo w3-hide-small" style="margin-left: auto; margin-right: auto;">Transcript Manager</span><br>
+    <span class="w3-large">Choose file</span>
+    <br>
+  <div class="form-group">
+    <label class="custom-file">
+        <input type="file" id="hashFile" class="custom-file-input">
+        <span style="color: black;"  class="custom-file-control" data-content="Choose file..."></span>
+    </label>
+  </div>
+  <div class="form-group">
+    <button type='button' id="findHashButton" onclick="find()" class="btn btn-primary" style="background-color: #1c3b1f; border: 2px solid #1c3b1f;"/>
+      Find on Blockchain
+    </button>
+  </div>
+  <div id=responseText></div>
+</div> 
+ 
+</header>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-16" style="color: white; background-color: #343a40;">
+  <p>© G10 D4CSA 2017-21</p><
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="sha256.js"></script>
+<script src="web3.min.js"></script>
+<script src="notaryWebLib.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
